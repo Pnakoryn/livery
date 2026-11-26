@@ -1,0 +1,69 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create the release
+      id-token: write # sign the build provenance
+      attestations: write # store the build provenance
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: go.mod
+          cache: false
+
+      - name: The tag is on main
+        env:
+          TAG: ${{ github.ref_name }}
+        run: git merge-base --is-ancestor "$TAG" origin/main
+
+      - name: Install golangci-lint
+        run: go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.15.0
+
+      - name: Check
+        run: make check
+
+      - name: Build the release files
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          make dist VERSION="${TAG#v}"
+          (cd dist && sha256sum -c SHA256SUMS)
+          test "$(./dist/livery-${TAG#v}-linux-amd64 version)" = "livery ${TAG#v}"
+
+      - name: Attest the build provenance
+        # Attestations need a public repository.
+        if: ${{ !github.event.repository.private }}
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: dist/livery-*
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          {
+            echo "Install: see the [README](https://github.com/${GITHUB_REPOSITORY}#install)."
+            echo
+            echo '```'
+            cat dist/SHA256SUMS
+            echo '```'
+          } > notes.md
+          gh release create "$TAG" dist/livery-* dist/SHA256SUMS LICENSE NOTICE --title "$TAG" --notes-file notes.md --generate-notes --verify-tag

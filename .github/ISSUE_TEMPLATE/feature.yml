@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a change or a new feature
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What can you not do today, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The proposed behaviour
+    validations:
+      required: true

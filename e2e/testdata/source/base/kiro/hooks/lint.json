@@ -1,0 +1,1 @@
+{"name": "lint", "when": {"type": "fileEdited", "patterns": ["**/*.go"]}, "then": {"type": "runCommand", "command": "golangci-lint run"}}

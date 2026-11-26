@@ -1,0 +1,44 @@
+name: Bug report
+description: Something does not work as documented
+body:
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: The command you ran
+      placeholder: livery setup --source ...
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Output of `livery version`
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `livery doctor`
+      description: Remove anything private.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Harness and OS
+      placeholder: Claude Code, Ubuntu 24.04
+    validations:
+      required: true

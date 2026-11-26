@@ -1,0 +1,1 @@
+{"command": "github-mcp", "args": ["stdio"], "env": {"GITHUB_TOKEN": "${GITHUB_TOKEN}"}}
