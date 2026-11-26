@@ -1,0 +1,24 @@
+version: "2"
+run:
+  build-tags:
+    - e2e
+linters:
+  default: standard
+  enable:
+    - bodyclose
+    - errorlint
+    - gocritic
+    - misspell
+    - nilerr
+    - revive
+    - unconvert
+  exclusions:
+    rules:
+      - path: internal/source/channel_test.go
+        linters:
+          - gocritic
+        text: mapKey
+formatters:
+  enable:
+    - gofmt
+    - goimports

@@ -1,0 +1,307 @@
+{
+  "key00": 1e3,
+  "key37": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key14": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key51": "plain <>& é \"quoted\" \\ back",
+  "key28": false,
+  "key05": null,
+  "key42": 1.0,
+  "key19": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key56": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key33": "plain <>& é \"quoted\" \\ back",
+  "key10": false,
+  "key47": null,
+  "key24": 12,
+  "key01": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key38": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key15": "plain <>& é \"quoted\" \\ back",
+  "key52": false,
+  "key29": null,
+  "key06": 18,
+  "key43": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key20": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key57": "plain <>& é \"quoted\" \\ back",
+  "key34": false,
+  "key11": null,
+  "key48": 24,
+  "key25": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key02": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key39": "plain <>& é \"quoted\" \\ back",
+  "key16": false,
+  "key53": null,
+  "key30": 30,
+  "mcpServers": {
+    "mine": {
+      "command": "my-server",
+      "args": [
+        "--flag",
+        "<&>"
+      ],
+      "env": {
+        "K": "v"
+      }
+    },
+    "zeta": {
+      "url": "https://x.example/é"
+    }
+  },
+  "key07": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key44": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key21": "plain <>& é \"quoted\" \\ back",
+  "key58": false,
+  "key35": null,
+  "key12": 36,
+  "key49": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key26": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key03": "plain <>& é \"quoted\" \\ back",
+  "key40": false,
+  "key17": null,
+  "key54": 42,
+  "key31": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key08": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key45": "plain <>& é \"quoted\" \\ back",
+  "key22": false,
+  "key59": null,
+  "key36": 48,
+  "key13": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key50": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key27": "plain <>& é \"quoted\" \\ back",
+  "key04": false,
+  "key41": null,
+  "key18": 54,
+  "key55": {
+    "text": "Grüße — 日本語 ✓ <b>&amp;</b> a&b",
+    "list": [
+      1,
+      2.5,
+      null,
+      true
+    ],
+    "empty": {},
+    "none": []
+  },
+  "key32": [
+    "<tag>",
+    "é",
+    "x & y",
+    [
+      1,
+      [
+        2,
+        {
+          "deep": "ü"
+        }
+      ]
+    ]
+  ],
+  "key09": "plain <>& é \"quoted\" \\ back",
+  "key46": false,
+  "key23": null
+}
